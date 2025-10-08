@@ -1,10 +1,8 @@
-# 🚗 Single-Screen Car Game
-
 <div align="center">
-  <h1>🏎️ Single-Screen Car Game 🏎️</h1>
+  <h1>🏎️ Lane Escape Car Game 🏎️</h1>
   <p><em>Experience the thrill of retro arcade racing right in your browser!</em></p>
   
-  ![Game Preview](assets/player1.png)
+[![Lane.gif](https://i.postimg.cc/d3H6nWs5/Lane.gif)](https://postimg.cc/V0tXkWbt)
   
   <p>
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
