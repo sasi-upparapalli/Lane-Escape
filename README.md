@@ -1,7 +1,12 @@
 <div align="center">
   <h1>🏎️ Lane Escape Car Game 🏎️</h1>
   <p><em>Experience the thrill of retro arcade racing right in your browser!</em></p>
-  
+  <p align="center">
+  <a href="https://sasi-upparapalli.github.io/Lane-Escape/" target="_blank">
+    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXU0cHJqbTZmZmd5dGs2dXVicDB2bWwzNHhjaTBuMzl1dzlwY2dzaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bpSul88UutQMT6XRyD/giphy.gif" alt="Lane Escape GIF" width="600"/>
+  </a>
+</p>
+
 [![Lane.gif](https://i.postimg.cc/d3H6nWs5/Lane.gif)](https://postimg.cc/V0tXkWbt)
   
   <p>
