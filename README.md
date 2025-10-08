@@ -134,19 +134,7 @@ single-screen-car-game/
 
 ## 🖼️ Screenshots & Demo
 
-### Game Screens
-```
-[Entry Screen] → [Main Menu] → [Level Selection] → [Gameplay]
-      ↓              ↓              ↓               ↓
-  Username Input   Game Options   Difficulty    Live Action
-```
-
-*Add your screenshots here:*
-- `screenshot-menu.png` - Main menu interface
-- `screenshot-game.png` - Gameplay in action  
-- `gameplay-demo.gif` - Animated gameplay demo
-
----
+[![Lane-2.png](https://i.postimg.cc/cHkG2tSh/Lane-2.png)](https://postimg.cc/8JvYr5sf)
 
 ## 🎭 About Section
 
