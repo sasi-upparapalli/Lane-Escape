@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Single-Screen Car Game — Updated</title>
+<link rel="stylesheet" href="style.css"> </head>
+<body>
+<div class="app">
+  <div class="frame">
+
+    <section id="screen-entry" class="screen">
+      <div class="card">
+        <h1>Welcome — Enter Your Username</h1>
+        <input id="usernameInput" type="text" placeholder="Enter username here" maxlength="20" />
+        <div style="margin-top:14px;"><button id="btnEntryNext" class="btn">Next</button></div>
+      </div>
+    </section>
+
+    <section id="screen-menu" class="screen hidden">
+      <div class="card">
+        <h1>Main Menu</h1><p>Choose an option to continue</p>
+        <div class="menu-grid">
+          <button id="btnStart" class="menu-btn btn">Start</button>
+          <button id="btnControls" class="menu-btn btn">Controls</button>
+          <button id="btnAbout" class="menu-btn btn">About</button>
+          <button id="btnContact" class="menu-btn btn">Contact</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-levels" class="screen hidden">
+      <div class="card">
+        <h1>Select Level</h1><p>Pick a level — the game starts immediately when you select a level.</p>
+        <div class="level-grid">
+          <div class="level-card"><strong>Level 1</strong><p style="color:var(--muted)">Easy — slow opponents</p><button class="btn" data-level="1">Play Level 1</button></div>
+          <div class="level-card"><strong>Level 2</strong><p style="color:var(--muted)">Medium speed</p><button class="btn" data-level="2">Play Level 2</button></div>
+          <div class="level-card"><strong>Level 3</strong><p style="color:var(--muted)">Hard — fast opponents</p><button class="btn" data-level="3">Play Level 3</button></div>
+        </div>
+        <div style="margin-top:12px;"><button id="btnLevelBack" class="btn secondary">Back</button></div>
+      </div>
+    </section>
+
+    <section id="screen-controls" class="screen hidden">
+    <div class="card">
+        <h1 class="card-title">How To Play</h1>
+        <div class="controls-list">
+            <p><strong>Move:</strong> Use the <span class="key-highlight">← Left</span> and <span class="key-highlight">Right →</span> arrow keys.</p>
+            <p><strong>Goal:</strong> Steer your car to **avoid incoming traffic**.</p>
+            <p><strong>Action:</strong> You can only move **left and right**.</p>
+            <p><strong>Pause/Resume:</strong> Press the <span class="key-highlight">P</span> key.</p>
+        </div>
+        <div style="margin-top:20px;">
+            <button id="btnControlsBack" class="btn secondary">Back to Menu</button>
+        </div>
+    </div>
+</section>
+
+    <section id="screen-about" class="screen hidden">
+  <div class="card about-card">
+    <h1>About — The Pioneers of Car Games</h1>
+    
+    <div class="history-section">
+      <h2>The 1970s: Birth of the Arcade Racer</h2>
+      <p>The first generation of car video games emerged from electro-mechanical arcade machines, evolving into purely digital experiences. These games focused on creating a basic sense of speed and avoiding obstacles.</p>
+      
+      <div class="game-detail">
+        <h3>Gran Trak 10 (1974)</h3>
+        <ul>
+          <li><strong>Significance:</strong> Widely considered the first arcade video game to feature cars and racing.</li>
+          <li><strong>Innovation:</strong> Introduced the use of a steering wheel, accelerator pedal, and a four-position gear shifter, setting the standard for arcade cabinet controls.</li>
+          <li><strong>Perspective:</strong> Utilized a simple <strong>top-down, fixed-screen view</strong>.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="history-section" style="margin-top: 20px;">
+      <h2>The 1980s: The Golden Age of Scale</h2>
+      <p>This era saw massive technical leaps, introducing color, sophisticated scaling, and more realistic racing dynamics, establishing the blueprint for modern racing games.</p>
+      
+      <div class="game-detail">
+        <h3>Pole Position (1982)</h3>
+        <ul>
+          <li><strong>Significance:</strong> A monumental hit that defined the modern racing genre.</li>
+          <li><strong>Innovation:</strong> Featured the first racing track based on a <strong>real-world circuit</strong> (Fuji Speedway) and pioneered the use of a qualifying lap. Its color graphics with sprite scaling created a convincing <strong>third-person, behind-the-car perspective</strong>, a view still used today.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:20px;"><button id="btnAboutBack" class="btn secondary">Back</button></div>
+  </div>
+</section>
+
+<section id="screen-contact" class="screen hidden">
+  <div class="card contact-card">
+    <h2>Connect With Me</h2>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/sasiupparapalli28/" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+      </a>
+
+      <a href="https://github.com/sasi-upparapalli" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github fa-2x"></i>
+      </a>
+
+      <a href="https://twitter.com/spicysasi" target="_blank" aria-label="Twitter">
+        <i class="fa-brands fa-x-twitter fa-2x"></i>
+      </a>
+
+      <a href="https://www.instagram.com/____sasi____upparapalli____" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram fa-2x"></i>
+      </a>
+
+      <a href="mailto:sasikanthupparapalli@gmail.com" aria-label="Send an Email">
+        <i class="fa-solid fa-envelope fa-2x"></i>
+      </a>
+    </div>
+
+    <div style="margin-top:20px;">
+      <button id="btnContactBack" class="btn secondary">Back</button>
+    </div>
+  </div>
+</section>
+    <section id="screen-game" class="screen hidden">
+      <div style="width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;">
+        <div class="game-area" id="gameArea" tabindex="0">
+          <div class="road"><div class="center-lines" id="centerLines"></div></div>
+          <div class="hud"><div class="left" id="hudUser">User: —</div><div class="right" id="hudScore"><i class="fa fa-star-o" aria-hidden="true"></i> Score:0 • High:0</div></div>
+          <img id="playerCar" class="player" src="assets/player1.png" alt="player">
+          <div id="opponentsContainer"></div>
+          <div id="gameOverOverlay" class="overlay" style="display:none;">
+            <div class="popup"><h2>Game Over</h2><p id="finalScoreText" style="color:var(--muted)"></p><div style="margin-top:12px;"><button id="btnRestart" class="btn">Restart <i class="fa fa-repeat fa-2x" aria-hidden="true"></i></button><button id="btnHome" class="btn secondary">Main Menu <i class="fa fa-home fa-2x" aria-hidden="true"></i></button></div></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;"><button id="btnPause" class="btn secondary"><i class="fa fa-pause" aria-hidden="true"></i></button><button id="btnExit" class="btn secondary">Exit to Menu <i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></button></div>
+      </div>
+          <!-- Add these inside your game screen HTML -->
+<div id="mobileControls" class="mobile-controls">
+  <button id="btnLeft" class="ctrl-btn">⟵</button>
+  <button id="btnRight" class="ctrl-btn">⟶</button>
+</div>
+    </section>
+
+
+
+  </div>
+</div>
+
+<script src="script.js"></script> </body>
+</html>
